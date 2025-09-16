@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet, IonRouterLink } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp } from 'ionicons/icons';
+import { addCircleOutline, fitnessOutline, calendarOutline, personOutline, bookOutline, bodyOutline, restaurantOutline, trophyOutline, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp } from 'ionicons/icons';
 import { register } from 'swiper/element/bundle';
 
 register();
@@ -16,15 +16,40 @@ register();
 })
 export class AppComponent {
   public appPages = [
-  { title: 'Inbox', url: '/home/inbox', icon: 'mail' },
-  { title: 'Outbox', url: '/home/outbox', icon: 'paper-plane' },
-  { title: 'Favorites', url: '/home/favorites', icon: 'heart' },
-  { title: 'Archived', url: '/home/archived', icon: 'archive' },
-  { title: 'Trash', url: '/home/trash', icon: 'trash' },
-  { title: 'Spam', url: '/home/spam', icon: 'warning' },
+  { title: 'Novo Treino', url: '/home/novo-treino', icon: 'add-circle' },
+  { title: 'Meus Treinos', url: '/home/meus-treinos', icon: 'fitness' },
+  { title: 'Programas', url: '/home/programas', icon: 'calendar' },
+  { title: 'Personal Online', url: '/home/personal-online', icon: 'person' },
+  { title: 'Conteúdos', url: '/home/conteudos', icon: 'book' },
+  { title: 'Meu Corpo', url: '/home/meu-corpo', icon: 'body' },
+  { title: 'Nutrição', url: '/home/nutricao', icon: 'restaurant' },
+  { title: 'Objetivos', url: '/home/objetivos', icon: 'trophy' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public labels = ['Cardio', 'Musculação', 'Funcional', 'Yoga', 'Pilates', 'CrossFit'];
   constructor() {
-    addIcons({ mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp });
+    addIcons({ 
+      addCircleOutline, 
+      fitnessOutline, 
+      calendarOutline, 
+      personOutline, 
+      bookOutline, 
+      bodyOutline, 
+      restaurantOutline, 
+      trophyOutline,
+      mailOutline, 
+      mailSharp, 
+      paperPlaneOutline, 
+      paperPlaneSharp, 
+      heartOutline, 
+      heartSharp, 
+      archiveOutline, 
+      archiveSharp, 
+      trashOutline, 
+      trashSharp, 
+      warningOutline, 
+      warningSharp, 
+      bookmarkOutline, 
+      bookmarkSharp 
+    });
   }
 }

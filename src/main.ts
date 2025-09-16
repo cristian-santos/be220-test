@@ -2,7 +2,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { RouteReuseStrategy, provideRouter, withPreloading, PreloadAllModules } from '@angular/router';
 import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { addCircleOutline, addCircle, add, notifications, notificationsOutline, calendar, person, personCircle } from 'ionicons/icons';
+import { addCircleOutline, addCircle, add, notifications, notificationsOutline, calendar, person, personCircle, bodyOutline, trophyOutline } from 'ionicons/icons';
 
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
@@ -17,6 +17,8 @@ addIcons({
   'calendar': calendar,
   'person': person,
   'person-circle': personCircle,
+  'body-outline': bodyOutline,
+  'trophy-outline': trophyOutline,
 });
 
 bootstrapApplication(AppComponent, {
