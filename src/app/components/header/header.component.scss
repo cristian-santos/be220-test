@@ -27,3 +27,91 @@ ion-item {
     width: 50px;
     background-color: rgba(87, 87, 87, 0.986);
 }
+
+// Avatar circular fix
+ion-avatar {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  
+  img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+  }
+}
+
+// User Profile Section
+.user-profile-section {
+  padding: 15px 20px;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info ion-avatar {
+  margin-right: 30px;
+}
+
+.user-details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.user-level {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #bb86fc;
+  font-weight: 400;
+}
+
+// Grid layout adjustments
+ion-grid {
+  padding: 15px 20px;
+}
+
+ion-row {
+  margin-bottom: 10px;
+}
+
+ion-row:last-child {
+  margin-bottom: 0;
+}
+
+// Action Buttons
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  --background: transparent;
+  --border-radius: 25px;
+  --border-width: 2px;
+  --border-color: #ff9500;
+  --color: #ff9500;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  height: 35px;
+  flex: 1;
+  margin: 0;
+}
+
+.action-btn ion-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}

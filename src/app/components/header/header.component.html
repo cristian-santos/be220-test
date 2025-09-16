@@ -1,26 +1,49 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+          <ion-menu-button></ion-menu-button>
+        </ion-col>
+        <ion-col size="8" class="ion-text-center">
+          <img src="assets/icon/logo.png" style="height: 40px;" />
+        </ion-col>
+        <ion-col size="2" class="ion-text-right">
+          <div class="icon-badge-container">
+            <img src="assets/icon/notification.png" alt="Notificação" />
+            <ion-badge color="danger" class="icon-badge">2</ion-badge>
+          </div>
+        </ion-col>
+      </ion-row>
 
-    <ion-title>
-      <img src="assets/icon/logo.png" alt="Logo" style="height: 50px; vertical-align: middle;" />
-    </ion-title>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="auto">
+          <ion-avatar style="width: 50px; height: 50px;">
+            <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Avatar" />
+          </ion-avatar>
+        </ion-col>
+        <ion-col>
+          <div class="user-details">
+            <h2 class="user-name">Cristian Santos</h2>
+            <p class="user-level">Nível Roxo</p>
+          </div>
+        </ion-col>
+      </ion-row>
 
-    <ion-buttons slot="end">
-      <div class="icon-badge-container">
-        <img src="assets/icon/notification.png" alt="Notificação" />
-        <ion-badge color="danger" class="icon-badge">2</ion-badge>
-      </div>
-    </ion-buttons>
-  </ion-toolbar>
-
-  <ion-toolbar class="avatar-toolbar">
-    <ion-buttons slot="start">
-      <ion-avatar>
-        <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Avatar" />
-      </ion-avatar>
-    </ion-buttons>
+      <ion-row>
+        <ion-col>
+          <div class="action-buttons">
+            <ion-button fill="clear" class="action-btn" style="border-radius: 40px; background-color: #000000;">
+              <ion-icon name="body-outline" slot="start"></ion-icon>
+              MEU CORPO
+            </ion-button>
+            <ion-button fill="clear" class="action-btn" style="border-radius: 40px; background-color: #000000;">
+              <ion-icon name="trophy-outline"></ion-icon>
+              OBJETIVOS E CONQUISTAS
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
