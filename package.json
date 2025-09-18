@@ -1,7 +1,8 @@
 {
-  "name": "ionic-app-base",
+  "name": "be220",
   "version": "0.0.0",
-  "author": "Ionic Framework",
+  "author": "Cristian Santos",
+  "description": "Modern fitness app UI demo",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
