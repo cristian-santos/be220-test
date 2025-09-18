@@ -61,8 +61,18 @@ ion-menu-button {
   color: #fff !important;
 }
 
-ion-content {
-    height: 200px;
+ion-avatar {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  
+  img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+  }
 }
 
 swiper-container {
@@ -112,4 +122,34 @@ swiper-container {
 
 .title {
     font-weight: bold;
+}
+
+.ion-padding {
+  height: 200px;
+}
+
+// Images
+.workout-card-massa {
+  background-image: url('assets/icon/ganhar-massa.jpg');
+  background-size: cover;
+}
+
+.food{
+    background-image: url('assets/icon/alimentacao.jpg');
+    background-size: cover;
+}
+
+.training {
+  background-image: url('assets/icon/treino.jpg');
+  background-size: cover;
+}
+
+.yoga {
+  background-image: url('assets/icon/yoga.jpg');
+  background-size: cover;
+}
+
+.weightlifting {
+  background-image: url('assets/icon/levantamento-peso.jpg');
+  background-size: cover;
 }

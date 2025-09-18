@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonContent } from '@ionic/angular/standalone';
+import { IonContent } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../components/header/header.component';
 import { PersonalOnlineComponent } from '../components/personal-online/personal-online.component';
 import { ProgramsComponent } from '../components/programs/programs.component';
@@ -11,15 +11,11 @@ import { ContentsComponent } from '../components/contents/contents.component';
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   imports: [
-    IonHeader,
-    IonToolbar,
-    IonButtons,
-    IonMenuButton,
+    IonContent,
     HeaderComponent,
     PersonalOnlineComponent,
     ProgramsComponent,
-    ContentsComponent,
-    IonContent
+    ContentsComponent
   ],
 })
 
